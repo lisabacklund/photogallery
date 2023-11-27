@@ -4,6 +4,8 @@
 }
 html{
     background-color: black;
+    margin: 10px;
+    margin-top: 0;
 }
 nav{
     display: flex;
@@ -56,7 +58,6 @@ body{
     min-width: 880px;
     background-color: white;
     margin: 0 auto;
-
 }
 .contact{
     background-color: black;
@@ -74,7 +75,9 @@ body{
 }
 form{
     max-width: 800px;
-    padding-left: 140px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
 }
 input, label, textarea{
     display: block;
@@ -139,12 +142,42 @@ button{
 padding-bottom: 150%;
 }
 
-.captions {
+.captions1 {
+    position: absolute;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.captions2 {
+    position: absolute;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 62%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.captions3 {
     position: absolute;
     color: black;
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.captions4 {
+    position: absolute;
+    color: black;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 143%;
     text-align: center;
     text-transform: uppercase;
     font-size: 1em;
@@ -155,4 +188,27 @@ footer {
     color:white;
     text-transform: uppercase;
     padding-top: 20px;
+}
+
+@media (max-width: 880px) {
+    .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-links{
+    text-align: center;
+    }
+    form{
+        padding-right: 8%;
+    }
+}
+@media (max-width: 485px) {
+    .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    form{
+        padding-right: 8%;
+    }
+    .nav-links{
+        text-align: center;
+        }
 }
